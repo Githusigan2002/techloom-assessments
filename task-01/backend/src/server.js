@@ -53,6 +53,13 @@ app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/payments", paymentRoutes);
 
+// Fallback routes in case clients call without /api prefix
+app.use("/auth", authRoutes);
+app.use("/products", productRoutes);
+app.use("/cart", cartRoutes);
+app.use("/orders", orderRoutes);
+app.use("/payments", paymentRoutes);
+
 // 404 Route Handler
 app.use(notFound);
 
