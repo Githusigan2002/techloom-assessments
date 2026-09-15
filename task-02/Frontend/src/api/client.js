@@ -10,8 +10,19 @@ const getOrCreateSessionId = () => {
   return sessionId;
 };
 
+const getBaseUrl = () => {
+  let url = (import.meta.env.VITE_API_URL || '/api').trim();
+  if (/^https?:\/\//i.test(url)) {
+    url = url.replace(/\/+$/, '');
+    if (!url.endsWith('/api')) {
+      url = `${url}/api`;
+    }
+  }
+  return url;
+};
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || '/api',
+  baseURL: getBaseUrl(),
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',

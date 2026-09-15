@@ -36,6 +36,7 @@ if (process.env.NODE_ENV === 'development') {
 
 // API Routes
 app.use('/api', apiRoutes);
+app.use('/', apiRoutes); // Fallback so requests to /auth, /products, etc. also work
 
 // Root greeting route
 app.get('/', (req, res) => {
