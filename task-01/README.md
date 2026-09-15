@@ -2,9 +2,9 @@
 ---
 ### Project Links
 
-* **Frontend Live Deployment:** [https://your-frontend-deployment-url.vercel.app](https://your-frontend-deployment-url.vercel.app) *(Replace with your live frontend URL)*
-* **Backend API Live Deployment:** [https://your-backend-deployment-url.onrender.com](https://your-backend-deployment-url.onrender.com) *(Replace with your live backend URL)*
-* **GitHub Repository:** [https://github.com/your-username/techloom-assessment](https://github.com/your-username/techloom-assessment) *(Replace with your repo URL)*
+* **Frontend Live Deployment:** [https://techloom-assessments-task01-fronten.vercel.app/](https://techloom-assessments-task01-fronten.vercel.app/)
+* **Backend API Live Deployment:** [https://techloom-assessments-task01-backend.vercel.app/](https://techloom-assessments-task01-backend.vercel.app/)
+* **GitHub Repository:** [https://github.com/Githusigan2002/techloom-assessments/tree/main/task-01](https://github.com/Githusigan2002/techloom-assessments/tree/main/task-01)
 
 #### Demo Accounts
 | Role | Email | Password | Access |
