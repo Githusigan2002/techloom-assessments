@@ -12,8 +12,13 @@ const connectDB = async () => {
     }
 
     if (!cached.promise) {
+        const mongoUri = process.env.MONGODB_URI || process.env.MONGO_URI;
+        if (!mongoUri) {
+            throw new Error("MONGODB_URI environment variable is missing. Please add MONGODB_URI in your Vercel project Settings -> Environment Variables.");
+        }
+
         cached.promise = mongoose
-            .connect(process.env.MONGODB_URI)
+            .connect(mongoUri)
             .then((mongooseInstance) => {
                 console.log("MongoDB connected");
                 return mongooseInstance;
